@@ -31,14 +31,16 @@ export default function SideBar() {
 
   const toggleButton = document.createElement("div");
   toggleButton.className = "toggle-button";
-
-  const toggleButtonHamburger1 = document.createElement("div");
-  const toggleButtonHamburger2 = document.createElement("div");
-  const toggleButtonHamburger3 = document.createElement("div");
-
-  toggleButton.appendChild(toggleButtonHamburger1)
-  toggleButton.appendChild(toggleButtonHamburger2)
-  toggleButton.appendChild(toggleButtonHamburger3)
+  
+  for (let i = 0; i < 3; i++) {
+    const line = document.createElement("div");
+    toggleButton.appendChild(line);
+  }
+  
+  toggleButton.addEventListener("click", () => {
+    toggleButton.classList.add("active");
+  });
+  
   sideBar.appendChild(toggleButton);
 
   const navigation = document.createElement("nav");
