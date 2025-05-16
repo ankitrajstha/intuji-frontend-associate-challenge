@@ -29,6 +29,18 @@ export default function SideBar() {
   logoContainer.appendChild(img);
   sideBar.appendChild(logoContainer);
 
+  const toggleButton = document.createElement("div");
+  toggleButton.className = "toggle-button";
+
+  const toggleButtonHamburger1 = document.createElement("div");
+  const toggleButtonHamburger2 = document.createElement("div");
+  const toggleButtonHamburger3 = document.createElement("div");
+
+  toggleButton.appendChild(toggleButtonHamburger1)
+  toggleButton.appendChild(toggleButtonHamburger2)
+  toggleButton.appendChild(toggleButtonHamburger3)
+  sideBar.appendChild(toggleButton);
+
   const navigation = document.createElement("nav");
   navigation.className = "navigation-container";
 
