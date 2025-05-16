@@ -1,0 +1,9 @@
+.contents {
+  display: flex;
+  background-color: #f7f7fb;
+  flex: 1;
+  padding: 3.2rem;
+  @media (max-width: 768px) {
+    flex: 1;
+  }
+}
