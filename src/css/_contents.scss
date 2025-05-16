@@ -3,7 +3,18 @@
   background-color: #f7f7fb;
   flex: 1;
   padding: 3.2rem;
+  width: 100%;
+
   @media (max-width: 768px) {
     flex: 1;
+  }
+  .top-contents {
+    display: flex;
+    gap: 2.4rem;
+    width: 100%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      flex: 1;
+    }
   }
 }
