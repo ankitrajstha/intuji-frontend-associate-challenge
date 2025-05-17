@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+.savingplan-container {
+  width: 34.7rem;
+  height: 43rem;
+  padding: 1.6rem;
+  border-radius: 1.4rem;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  .savingplan-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: $primary-text-color;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      color: #4745a4;
+    }
+  }
+}

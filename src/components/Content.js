@@ -1,5 +1,6 @@
 import Actions from "./Actions";
 import Overview from "./Overview";
+import SavingPlan from "./SavingPlan";
 import SearchBar from "./SearchBar";
 
 export default function Contents() {
@@ -18,6 +19,7 @@ export default function Contents() {
   gridLayout.className = "grid-layout";
 
   gridLayout.appendChild(Overview());
+  gridLayout.appendChild(SavingPlan());
 
   contents.appendChild(gridLayout);
 
