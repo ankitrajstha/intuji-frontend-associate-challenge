@@ -1,8 +1,9 @@
 @use "./variables" as *;
 
 .actions-container {
+  width: 100%;
   min-width: 35rem;
-  max-width: auto;
+  max-width: max-content;
   height: 6.4rem;
   padding: 0.8rem;
   display: flex;

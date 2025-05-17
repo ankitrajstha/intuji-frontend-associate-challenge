@@ -1,7 +1,7 @@
 .contents {
   background-color: #f7f7fb;
   padding: 3.2rem;
-  width: 100%;
+  width: calc(100% - 28rem);
 
   @media (max-width: 768px) {
     flex: 1;

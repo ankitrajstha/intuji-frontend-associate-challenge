@@ -1,7 +1,9 @@
 @use "./variables" as *;
 
 .searchbar-container {
-  width: 72.2rem;
+  width: 100%;
+  min-width: 72.2rem;
+  max-width: auto;
   height: 6.4rem;
   padding: 1.3rem 2rem;
   border-radius: 10rem;
@@ -12,6 +14,7 @@
 
   @media (max-width: 768px) {
     width: 100%;
+    min-width: 100vw;
   }
 
   .searchbar {
