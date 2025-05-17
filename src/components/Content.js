@@ -1,7 +1,9 @@
 import Actions from "./Actions";
+import Analytics from "./Analytics";
 import Overview from "./Overview";
 import SavingPlan from "./SavingPlan";
 import SearchBar from "./SearchBar";
+import Transaction from "./Transaction";
 
 export default function Contents() {
   const contents = document.createElement("main");
@@ -20,6 +22,8 @@ export default function Contents() {
 
   gridLayout.appendChild(Overview());
   gridLayout.appendChild(SavingPlan());
+  gridLayout.appendChild(Analytics());
+  gridLayout.appendChild(Transaction());
 
   contents.appendChild(gridLayout);
 

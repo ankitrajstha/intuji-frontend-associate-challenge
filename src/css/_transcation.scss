@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+.transaction-conatainer {
+  width: 34.7rem;
+  height: 40.2rem;
+  padding: 1.6rem;
+  border-radius: 1.4rem;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  .transaction-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      color: $primary-text-color;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    a {
+      color: $background-purple;
+      display: inline-block;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+
+  .line {
+    width: 100%;
+    border: 1px solid rgba($color: $primary-text-color, $alpha: 0.1);
+  }
+}

@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+.analytics-container {
+  width: 71.7rem;
+  height: 40.2rem;
+  padding: 2rem;
+  border-radius: 1.4rem;
+  background: $white;
+}
