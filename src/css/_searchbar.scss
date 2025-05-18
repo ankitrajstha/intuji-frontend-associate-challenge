@@ -1,20 +1,18 @@
 @use "./variables" as *;
 
 .searchbar-container {
-  width: 100%;
-  min-width: 72.2rem;
-  max-width: auto;
+  max-width: 72.2rem;
   height: 6.4rem;
   padding: 1.3rem 2rem;
   border-radius: 10rem;
   background-color: $white;
   display: flex;
+  flex-grow:1;
   align-items: center;
   gap: 1rem;
 
   @media (max-width: 768px) {
-    width: 100%;
-    min-width: 100vw;
+    max-width: 100%;
   }
 
   .searchbar {

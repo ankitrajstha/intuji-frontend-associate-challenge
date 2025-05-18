@@ -2,13 +2,14 @@
 
 .sidebar-container {
   width: 28rem;
-  height: 100vh;
+  min-height: 100vh;
   padding: 3.2rem 0;
   background: $white;
   position: relative;
 
   @media (max-width: 768px) {
-    height: 7.2rem;
+    min-height: 0;
+    max-height: 7.2rem;
     width: 100vw;
     background: $white;
     display: flex;
