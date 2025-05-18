@@ -1,7 +1,8 @@
 @use "./variables" as *;
 
 .savingplan-container {
-  width: 34.7rem;
+  max-width: 34.7rem;
+  min-width: 100%;
   height: 43rem;
   padding: 1.6rem;
   border-radius: 1.4rem;
@@ -9,6 +10,10 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 
   .savingplan-heading-container {
     display: flex;
@@ -29,8 +34,12 @@
     }
   }
   .line {
-    width: 31.5rem;
+    max-width: 31.5rem;
     border: 1px solid rgba($primary-text-color, $alpha: 0.1);
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   .progressbar-wrapper {
@@ -42,6 +51,7 @@
 
     .progressbar-container {
       width: 100%;
+
       height: 9.9rem;
       display: flex;
       flex-direction: column;
@@ -65,11 +75,16 @@
       }
 
       .progress-container {
-        width: 29.9rem;
+        max-width: 29.9rem;
+        min-width: 100%;
         height: 4.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
+
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
 
         .target-container {
           height: 2.5rem;
