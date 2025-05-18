@@ -79,9 +79,15 @@ export default function Transaction() {
     rightContainer.className = "right-container";
 
     const total = document.createElement("p");
+    total.className = "total";
     total.innerText = `${item.total}`;
 
+    const status = document.createElement("p");
+    status.className = "status";
+    status.innerText = `${item.status}`;
+
     rightContainer.appendChild(total);
+    rightContainer.appendChild(status);
 
     textContainer.appendChild(title);
     textContainer.appendChild(date);
