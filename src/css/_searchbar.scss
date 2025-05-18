@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+.searchbar-container {
+  width: 100%;
+  min-width: 72.2rem;
+  max-width: auto;
+  height: 6.4rem;
+  padding: 1.3rem 2rem;
+  border-radius: 10rem;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 100vw;
+  }
+
+  .searchbar {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: $text-neutral-500;
+  }
+
+  .search-icon {
+    color: $text-neutral-500;
+  }
+
+  &:focus-within {
+    box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.15);
+  }
+}

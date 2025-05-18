@@ -1,3 +1,11 @@
-@use "./base.scss";
+@use "./base";
 @use "./variables";
-@use "./sideBar.scss";
+@use "./layout";
+@use "./sideBar";
+@use "./contents";
+@use "./searchbar";
+@use "./actions";
+@use "./overview";
+@use "./savingplan";
+@use "./analytics";
+@use "./transcation";

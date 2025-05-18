@@ -1,0 +1,160 @@
+@use "./variables" as *;
+
+.overview-container {
+  width: 71.7rem;
+  height: 43rem;
+  padding: 1.6rem;
+  border-radius: 1.4rem;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+
+  .heading-2 {
+    color: $primary-text-color;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .overview-card-container {
+    width: 68.5rem;
+    height: 34.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+
+    .card {
+      width: 33.35rem;
+      height: 16.55rem;
+      padding: 2rem;
+      background: $white;
+      border-radius: 1.4rem;
+      border: 1px solid $background-grey-1;
+
+      &.active {
+        background-color: $background-purple;
+      }
+
+      .card-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .card-top {
+          width: 100%;
+          height: 5rem;
+          display: flex;
+          gap: 0.9rem;
+
+          .card-icon-container {
+            height: 4.8rem;
+            width: 4.8rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(222, 222, 222, 0.2);
+            background-color: transparent;
+
+            .card-icon {
+              width: 3.2rem;
+              height: 3.2rem;
+              background-color: $white;
+
+              &.active {
+                background-color: $background-purple;
+              }
+            }
+          }
+          .card-heading-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+
+            h3 {
+              color: $primary-text-color;
+              font-size: 1.8rem;
+              font-weight: 600;
+
+              &.active {
+                color: $white;
+              }
+            }
+
+            .subheading-container {
+              height: 1.5rem;
+              display: flex;
+              gap: 0.4rem;
+
+              .subheading-icon {
+                width: 1.4rem;
+                height: 1.4rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+
+              p {
+                color: $primary-text-color;
+                font-size: 1.2rem;
+                font-weight: 400;
+                opacity: 0.6;
+
+                &.active {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+
+        .line {
+          width: 100%;
+          height: 0.1rem;
+          background: rgba($primary-text-color, $alpha: 0.2);
+
+          &.active {
+            background-color: rgba($white, $alpha: 0.2);
+          }
+        }
+
+        .card-bottom {
+          width: 100%;
+          height: 3.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .balance {
+            color: $primary-text-color;
+            font-size: 2.8rem;
+            font-weight: 600;
+
+            &.active {
+              color: $white;
+            }
+          }
+
+          .right-arrow {
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            mask: url("arrow-right.svg") no-repeat;
+            mask-size: contain;
+            background-color: $primary-text-color;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+
+            &.active {
+              background-color: $white;
+            }
+            &:hover {
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
