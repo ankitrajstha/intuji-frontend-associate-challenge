@@ -1,3 +1,4 @@
+import { renderAnalyticsChart } from "../js/chart";
 import Actions from "./Actions";
 import Analytics from "./Analytics";
 import Overview from "./Overview";
@@ -22,7 +23,11 @@ export default function Contents() {
 
   gridLayout.appendChild(Overview());
   gridLayout.appendChild(SavingPlan());
-  gridLayout.appendChild(Analytics());
+  const analyticsComponent = Analytics();
+  gridLayout.appendChild(analyticsComponent);
+  requestAnimationFrame(() => {
+    renderAnalyticsChart();
+  });
   gridLayout.appendChild(Transaction());
 
   contents.appendChild(gridLayout);

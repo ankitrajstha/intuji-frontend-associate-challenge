@@ -47,6 +47,11 @@ export default function Analytics() {
   const arrowIcon = document.createElement("div");
   arrowIcon.className = "arrow-icon";
 
+  const chartContainer = document.createElement("div");
+  chartContainer.id = "analytics-chart";
+  chartContainer.style.width = "100%";
+  chartContainer.style.height = "30.4rem";
+
   dropdownContainer.appendChild(arrowIcon);
 
   timePeriodContainer.appendChild(timeperiod);
@@ -68,6 +73,7 @@ export default function Analytics() {
   headersContainer.appendChild(rightContainer);
 
   analyticsWrapper.appendChild(headersContainer);
+  analyticsWrapper.appendChild(chartContainer);
 
   analyticsContainer.appendChild(analyticsWrapper);
   return analyticsContainer;
