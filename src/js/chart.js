@@ -4,8 +4,12 @@ export function renderAnalyticsChart() {
     chart: {
       type: "area",
       height: 304,
-      toolbar: { show: false },
+      toolbar: {
+        show: false,
+      },
+      zoom: false,
     },
+
     colors: ["#F8CD70", "#4745A4"],
     dataLabels: { enabled: false },
     stroke: { curve: "smooth", width: 2 },
