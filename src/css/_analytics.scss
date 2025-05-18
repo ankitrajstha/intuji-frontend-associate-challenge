@@ -66,7 +66,12 @@
               width: 1.2rem;
               height: 1.2rem;
               border-radius: 50%;
+            }
+            .analytics-labelone-circle {
               background: $background-purple;
+            }
+            .analytics-labeltwo-circle {
+              background: $background-yellow;
             }
             p {
               color: $primary-text-color;
