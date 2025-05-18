@@ -17,7 +17,7 @@ const overviewCardItems = [
   },
   {
     icon: "direct-up.svg",
-    heading: "Saving",
+    heading: "Expenses",
     subHeading: "2 % compared with last month",
     subHeadingIcon: "export-3.svg",
     balance: "$ 200.31",
@@ -25,7 +25,7 @@ const overviewCardItems = [
   },
   {
     icon: "direct-down.svg",
-    heading: "Saving",
+    heading: "Incomes",
     subHeading: "8 % compared with last month",
     subHeadingIcon: "export-4.svg",
     balance: "$ 21,121.0",
