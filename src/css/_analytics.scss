@@ -41,6 +41,10 @@
         display: flex;
         align-items: center;
         gap: 3.2rem;
+        @media (max-width: 768px) {
+          flex-wrap: wrap;
+          gap: 0;
+        }
 
         .analytics-labels-container {
           width: 17rem;
@@ -92,7 +96,7 @@
         }
       }
       .analytics-timeperiod-container {
-        width: 90rem;
+        max-width: 90rem;
         height: 3.4rem;
         padding: 0.8rem;
         border-radius: 0.8rem;
@@ -100,6 +104,11 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          justify-content: center;
+        }
 
         p {
           color: #7c7c7c;
