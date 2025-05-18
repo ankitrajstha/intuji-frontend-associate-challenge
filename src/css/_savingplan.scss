@@ -35,6 +35,7 @@
   }
   .line {
     max-width: 31.5rem;
+    min-width: 100%;
     border: 1px solid rgba($primary-text-color, $alpha: 0.1);
 
     @media (max-width: 768px) {
