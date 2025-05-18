@@ -42,7 +42,7 @@
     flex-direction: column;
     gap: 2.5rem;
 
-    .transaction-container {
+    .transaction-wrapper {
       width: 30.7rem;
       height: 5.55rem;
       padding: 0.8rem 0;
@@ -100,6 +100,6 @@
   .right-container {
     width: 5.9rem;
     height: 4.3rem;
-    background: #000;
+    // background: #000;
   }
 }

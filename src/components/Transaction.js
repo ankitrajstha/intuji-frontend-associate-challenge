@@ -54,7 +54,7 @@ export default function Transaction() {
 
   function createTransactions(item) {
     const transactionWrapper = document.createElement("div");
-    transactionWrapper.className = "transaction-container";
+    transactionWrapper.className = "transaction-wrapper";
 
     const leftContainer = document.createElement("div");
     leftContainer.className = "left-container";
@@ -75,6 +75,14 @@ export default function Transaction() {
     const date = document.createElement("p");
     date.innerText = `${item.date}`;
 
+    const rightContainer = document.createElement("div");
+    rightContainer.className = "right-container";
+
+    const total = document.createElement("p");
+    total.innerText = `${item.total}`;
+
+    rightContainer.appendChild(total);
+
     textContainer.appendChild(title);
     textContainer.appendChild(date);
 
@@ -83,6 +91,7 @@ export default function Transaction() {
     leftContainer.appendChild(iconContainer);
     leftContainer.appendChild(textContainer);
     transactionWrapper.appendChild(leftContainer);
+    transactionWrapper.appendChild(rightContainer);
 
     return transactionWrapper;
   }
